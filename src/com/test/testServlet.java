@@ -17,7 +17,7 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/testServlet")
 public class testServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
+
     /**
      * @see HttpServlet#HttpServlet()
      */
@@ -44,7 +44,7 @@ public class testServlet extends HttpServlet {
 		ArrayList stulist=new ArrayList();
 		stulist=dao.inquiryStudent(number, userClass);
 		Boolean result=stulist.isEmpty();
-		
+		System.out.System.out.println("");
 		response.getWriter().append("Served at: "+result).append(request.getContextPath());
 	}
 
@@ -53,7 +53,7 @@ public class testServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		
+
 		doGet(request, response);
 	}
 
